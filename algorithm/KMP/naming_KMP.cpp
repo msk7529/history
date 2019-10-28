@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 using namespace std;
+// algospot
 
 vector<int> getPartialMatched(const string& N)
 {
