@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 using namespace std;
+// algospot
 
 int c, n, d, p, t, q;
 vector<int> adj[51];
@@ -22,7 +23,7 @@ double solve(int tg, int td)
 	ret = 0;
 
 	for (int i = 0; i < adj[tg].size(); i++)
-		ret += (double)1 / (double)adj[tg].size() * solve(adj[tg][i], td + 1);	// double·Î Çüº¯È¯¾ÈÇÒ½Ã ´äÀÌ 0À¸·Î ³ª¿È.
+		ret += (double)1 / (double)adj[tg].size() * solve(adj[tg][i], td + 1);	// doubleë¡œ í˜•ë³€í™˜ì•ˆí• ì‹œ ë‹µì´ 0ìœ¼ë¡œ ë‚˜ì˜´.
 
 	return ret;
 }
@@ -57,7 +58,7 @@ int main()
 					dp[j][z] = -1;
 			}
 			cin >> q;
-			cout.precision(10);				// ÀÌ°Í ¾È¾²¸é ¿À´ä.
+			cout.precision(10);				// ì´ê²ƒ ì•ˆì“°ë©´ ì˜¤ë‹µ.
 			cout << solve(p, 0) << " ";
 		}
 		cout << endl;
