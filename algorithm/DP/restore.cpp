@@ -5,11 +5,12 @@
 #include <algorithm>
 #define MAX 987654321
 using namespace std;
+// algospot
 
 int C, k;
 int dp[1 << 17][17];
-int overlap[17][17];	// overlap[i][j] : s[i]µÚ¿¡ s[j]¸¦ °ãÄ£´Ù°í ÇÒ¶§, °ãÃÄÁö´Â ÃÖ´ë ±ÛÀÚ¼ö
-int curr[17];			// ÁÖ¾îÁö´Â ±ÛÀÚµéÁß s º¤ÅÍ¿¡ Çª½¬¿©ºÎ¸¦ °áÁ¤. curr[i]°ªÀÌ 0ÀÌ¸é Çª½¬.
+int overlap[17][17];	// overlap[i][j] : s[i]ë’¤ì— s[j]ë¥¼ ê²¹ì¹œë‹¤ê³  í• ë•Œ, ê²¹ì³ì§€ëŠ” ìµœëŒ€ ê¸€ìžìˆ˜
+int curr[17];			// ì£¼ì–´ì§€ëŠ” ê¸€ìžë“¤ì¤‘ s ë²¡í„°ì— í‘¸ì‰¬ì—¬ë¶€ë¥¼ ê²°ì •. curr[i]ê°’ì´ 0ì´ë©´ í‘¸ì‰¬.
 string arr[17];
 vector<string> s;
 
