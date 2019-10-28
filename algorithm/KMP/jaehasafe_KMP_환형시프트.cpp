@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 using namespace std;
-
+// algospot
 int C, N;
 string s[102];
 
@@ -67,7 +67,7 @@ vector<int> kmpSearch(const string& H, const string& N)
 }
 
 int solve(const string& H, const string& N)
-// H¸¦ NÀ¸·Î ¸¸µé±â À§ÇØ È¯Çü ½ÃÇÁÆ®¸¦ ¸î¹øÀÌ³ª ÇØ¾ßÇÏ´ÂÁö ¹ÝÈ¯.
+// Hë¥¼ Nìœ¼ë¡œ ë§Œë“¤ê¸° ìœ„í•´ í™˜í˜• ì‹œí”„íŠ¸ë¥¼ ëª‡ë²ˆì´ë‚˜ í•´ì•¼í•˜ëŠ”ì§€ ë°˜í™˜.
 {
 	return kmpSearch(H + H, N)[0];
 }
@@ -86,9 +86,9 @@ int main()
 			cin >> s[i];
 		for (int i = 0; i < N; i++)
 		{
-			if (i % 2 == 0)		// ½Ã°è¹æÇâ
+			if (i % 2 == 0)		// ì‹œê³„ë°©í–¥
 				result += solve(s[i + 1], s[i]);
-			else	// ¹Ý½Ã°è¹æÇâ
+			else	// ë°˜ì‹œê³„ë°©í–¥
 				result += solve(s[i], s[i + 1]);
 		}
 		cout << result << endl;
